@@ -11,14 +11,18 @@
 		66A54F3A2791157200820BE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A54F392791157200820BE5 /* ContentView.swift */; };
 		66A54F3C2791157300820BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A54F3B2791157300820BE5 /* Assets.xcassets */; };
 		66A54F3F2791157300820BE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A54F3E2791157300820BE5 /* Preview Assets.xcassets */; };
+		7B02775DFBF1019AB839FB95 /* Pods_VGBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5ACEF301BB985D53FCEC52 /* Pods_VGBox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C5ACEF301BB985D53FCEC52 /* Pods_VGBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VGBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A54F342791157100820BE5 /* VGBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A54F372791157200820BE5 /* VGBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGBoxApp.swift; sourceTree = "<group>"; };
 		66A54F392791157200820BE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		66A54F3B2791157300820BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66A54F3E2791157300820BE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		872F96B706D65D3C98B3DD66 /* Pods-VGBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGBox.debug.xcconfig"; path = "Target Support Files/Pods-VGBox/Pods-VGBox.debug.xcconfig"; sourceTree = "<group>"; };
+		D17A7C514E235CD00F2457ED /* Pods-VGBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGBox.release.xcconfig"; path = "Target Support Files/Pods-VGBox/Pods-VGBox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B02775DFBF1019AB839FB95 /* Pods_VGBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39BE7B843C9657FCDB49125D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				872F96B706D65D3C98B3DD66 /* Pods-VGBox.debug.xcconfig */,
+				D17A7C514E235CD00F2457ED /* Pods-VGBox.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		66A54F2B2791157100820BE5 = {
 			isa = PBXGroup;
 			children = (
 				66A54F362791157100820BE5 /* VGBox */,
 				66A54F352791157100820BE5 /* Products */,
+				39BE7B843C9657FCDB49125D /* Pods */,
+				9F1891F212E6728E7984A11C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9F1891F212E6728E7984A11C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C5ACEF301BB985D53FCEC52 /* Pods_VGBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66A54F422791157300820BE5 /* Build configuration list for PBXNativeTarget "VGBox" */;
 			buildPhases = (
+				E9CDDEF51C9C92BCAFDE28C0 /* [CP] Check Pods Manifest.lock */,
 				66A54F302791157100820BE5 /* Sources */,
 				66A54F312791157100820BE5 /* Frameworks */,
 				66A54F322791157100820BE5 /* Resources */,
+				9838F6BE037DCAD522AC7EAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9838F6BE037DCAD522AC7EAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VGBox/Pods-VGBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VGBox/Pods-VGBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VGBox/Pods-VGBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CDDEF51C9C92BCAFDE28C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VGBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66A54F302791157100820BE5 /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		66A54F432791157300820BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872F96B706D65D3C98B3DD66 /* Pods-VGBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +362,7 @@
 		};
 		66A54F442791157300820BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17A7C514E235CD00F2457ED /* Pods-VGBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

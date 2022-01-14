@@ -1,0 +1,6 @@
+framework module Pods_VGBox {
+  umbrella header "Pods-VGBox-umbrella.h"
+
+  export *
+  module * { export * }
+}
