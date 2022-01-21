@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				6933CFE4279A44CE00654B01 /* MainViews.swift */,
-				6933D027279A4A9700654B01 /* Health */,
 				6933D00A279A4A8400654B01 /* Shop */,
+				6933D027279A4A9700654B01 /* Health */,
 				66A54F372791157200820BE5 /* VGBoxApp.swift */,
 				66A54F392791157200820BE5 /* ContentView.swift */,
 				66A54F3B2791157300820BE5 /* Assets.xcassets */,
