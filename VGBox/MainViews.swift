@@ -17,6 +17,7 @@ struct MainViews: View {
     
     @StateObject var MyData = ShopMenu()
     @StateObject var cacu = Cacus()
+    @StateObject var AgeViews = VGinform()
     @State var selectionId = selectionName.shopping_cart
     @State var numbers = "home"
     
@@ -34,7 +35,7 @@ struct MainViews: View {
                     }
                     .tag(selectionName.home_view)
                 HealtView().environmentObject(MyData).tabItem { Image(systemName:"heart.text.square.fill")
-                }
+                }.environmentObject(AgeViews)
                 .tag(selectionName.health)
             }
         }
