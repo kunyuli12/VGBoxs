@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct VGBoxApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject var viewModel =  AuthenticationViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            MainViews()
+            MainViews().environmentObject(viewModel)
         }
     }
 }

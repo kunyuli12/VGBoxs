@@ -27,6 +27,9 @@
 		6965985C27B69BE700BFDDCD /* buybuttom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965985B27B69BE700BFDDCD /* buybuttom.swift */; };
 		6965988B27B6A1E500BFDDCD /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965988927B6A1E400BFDDCD /* TestModel.swift */; };
 		6965988C27B6A1E500BFDDCD /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965988A27B6A1E400BFDDCD /* ShopModel.swift */; };
+		6965988E27B6B1C600BFDDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965988D27B6B1C600BFDDCD /* AppDelegate.swift */; };
+		6965989027B6B22200BFDDCD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6965988F27B6B22200BFDDCD /* AuthenticationViewModel.swift */; };
+		6965989227B6B4EF00BFDDCD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6965989127B6B4EF00BFDDCD /* GoogleService-Info.plist */; };
 		696B716F27AC1F1C000F77CA /* resultview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696B716E27AC1F1C000F77CA /* resultview.swift */; };
 		7B02775DFBF1019AB839FB95 /* Pods_VGBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5ACEF301BB985D53FCEC52 /* Pods_VGBox.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,10 @@
 		6965985B27B69BE700BFDDCD /* buybuttom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buybuttom.swift; sourceTree = "<group>"; };
 		6965988927B6A1E400BFDDCD /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		6965988A27B6A1E400BFDDCD /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		6965988D27B6B1C600BFDDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6965988F27B6B22200BFDDCD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		6965989127B6B4EF00BFDDCD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6965989327B6B4F300BFDDCD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../IOShomework/IOShomework/Newwork/Shop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		696B716E27AC1F1C000F77CA /* resultview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultview.swift; sourceTree = "<group>"; };
 		872F96B706D65D3C98B3DD66 /* Pods-VGBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGBox.debug.xcconfig"; path = "Target Support Files/Pods-VGBox/Pods-VGBox.debug.xcconfig"; sourceTree = "<group>"; };
 		D17A7C514E235CD00F2457ED /* Pods-VGBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VGBox.release.xcconfig"; path = "Target Support Files/Pods-VGBox/Pods-VGBox.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,10 +109,13 @@
 			isa = PBXGroup;
 			children = (
 				6933CFE4279A44CE00654B01 /* MainViews.swift */,
+				6965989327B6B4F300BFDDCD /* GoogleService-Info.plist */,
 				6933D00A279A4A8400654B01 /* Shop */,
 				6933D027279A4A9700654B01 /* Health */,
 				66A54F372791157200820BE5 /* VGBoxApp.swift */,
 				66A54F392791157200820BE5 /* ContentView.swift */,
+				6965988D27B6B1C600BFDDCD /* AppDelegate.swift */,
+				6965988F27B6B22200BFDDCD /* AuthenticationViewModel.swift */,
 				66A54F3B2791157300820BE5 /* Assets.xcassets */,
 				66A54F3D2791157300820BE5 /* Preview Content */,
 			);
@@ -129,6 +139,7 @@
 				6933D013279A4A8400654B01 /* MeatList.swift */,
 				6933D014279A4A8400654B01 /* VegetableView.swift */,
 				6965985B27B69BE700BFDDCD /* buybuttom.swift */,
+				6965989127B6B4EF00BFDDCD /* GoogleService-Info.plist */,
 			);
 			name = Shop;
 			path = ../../IOShomework/IOShomework/Newwork/Shop;
@@ -238,6 +249,7 @@
 			files = (
 				66A54F3F2791157300820BE5 /* Preview Assets.xcassets in Resources */,
 				66A54F3C2791157300820BE5 /* Assets.xcassets in Resources */,
+				6965989227B6B4EF00BFDDCD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +310,8 @@
 				6933D01A279A4A8400654B01 /* ShopView.swift in Sources */,
 				6933D01C279A4A8400654B01 /* HomeView.swift in Sources */,
 				696B716F27AC1F1C000F77CA /* resultview.swift in Sources */,
+				6965988E27B6B1C600BFDDCD /* AppDelegate.swift in Sources */,
+				6965989027B6B22200BFDDCD /* AuthenticationViewModel.swift in Sources */,
 				694A756527A9539700CAF86D /* BoxView.swift in Sources */,
 				6933D01B279A4A8400654B01 /* PurchaseHistory.swift in Sources */,
 				6933D01F279A4A8400654B01 /* Account.swift in Sources */,
